@@ -17,6 +17,30 @@ const DownloadHistory = require("./src/history");
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 autoUpdater.autoDownload = false;
 
+function isAutoUpdateSupported() {
+	if (!app.isPackaged) return false;
+	if (process.windowsStore || process.mas) return false;
+	if (process.env.YTDOWNLOADER_AUTO_UPDATES === "0") return false;
+
+	const appPath = app.getAppPath();
+	if (process.platform === "darwin" && !appPath.startsWith("/Applications/")) {
+		return false;
+	}
+
+	return true;
+}
+
+function shouldShowAutoUpdateError(error) {
+	const message = `${error?.message || error || ""}`.toLowerCase();
+	if (!isAutoUpdateSupported()) return false;
+	if (message.includes("cannot find latest-mac.yml")) return false;
+	if (message.includes("no published versions")) return false;
+	if (message.includes("net::err")) return false;
+	if (message.includes("status code 404")) return false;
+	if (message.includes("status code 403")) return false;
+	return true;
+}
+
 const USER_DATA_PATH = app.getPath("userData");
 const CONFIG_FILE_PATH = path.join(USER_DATA_PATH, "ytdownloader.json");
 
@@ -483,7 +507,9 @@ function registerAutoUpdaterEvents() {
 
 	autoUpdater.on("error", (error) => {
 		console.error("Auto-update error:", error);
-		dialog.showErrorBox("Update Error", i18n("updateError"));
+		if (shouldShowAutoUpdateError(error)) {
+			dialog.showErrorBox("Update Error", i18n("updateError"));
+		}
 	});
 }
 
