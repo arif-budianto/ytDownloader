@@ -106,6 +106,22 @@ Flatpak is recommended. For arm processors, download from flathub.
 
 ## macOS 🍎
 
+### Homebrew installation
+
+You can install the macOS app from this repository tap:
+
+```
+brew tap arif-budianto/ytDownloader https://github.com/arif-budianto/ytDownloader
+brew install --cask arif-budianto/ytDownloader/ytdownloader
+```
+
+To update later:
+
+```
+brew update
+brew upgrade --cask arif-budianto/ytDownloader/ytdownloader
+```
+
 Since the app is not signed, when you will try to open the app, macOS will not allow you to open it. 
 
 You need to open terminal and execute:
