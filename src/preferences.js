@@ -206,7 +206,7 @@ ytDlpArgsInput.addEventListener("input", () => {
 
 getId("learnMoreLink").addEventListener("click", () => {
 	shell.openExternal(
-		"https://github.com/aandrew-me/ytDownloader/wiki/Custom-yt%E2%80%90dlp-options"
+		"https://github.com/arif-budianto/ytDownloader/wiki/Custom-yt%E2%80%90dlp-options"
 	);
 });
 

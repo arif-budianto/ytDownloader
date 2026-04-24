@@ -2,24 +2,24 @@
 
 # ytDownloader
 
-[![Flathub](https://img.shields.io/flathub/downloads/io.github.aandrew_me.ytdn?label=Flathub%20downloads)](https://flathub.org/apps/details/me.aandrew.ytdownloader)
-[![GitHub downloads](https://img.shields.io/github/downloads/aandrew-me/ytdownloader/total?label=Github%20downloads)](https://github.com/aandrew-me/ytDownloader/releases)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/aandrew-me/ytdownloader?label=latest%20release)](https://github.com/aandrew-me/ytDownloader/releases/latest)
-[![Flathub](https://img.shields.io/flathub/v/io.github.aandrew_me.ytdn)](https://flathub.org/apps/io.github.aandrew_me.ytdn)
+[![Flathub](https://img.shields.io/flathub/downloads/io.github.arif_budianto.ytdn?label=Flathub%20downloads)](https://flathub.org/apps/io.github.arif_budianto.ytdn)
+[![GitHub downloads](https://img.shields.io/github/downloads/arif-budianto/ytdownloader/total?label=Github%20downloads)](https://github.com/arif-budianto/ytDownloader/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/arif-budianto/ytdownloader?label=latest%20release)](https://github.com/arif-budianto/ytDownloader/releases/latest)
+[![Flathub](https://img.shields.io/flathub/v/io.github.arif_budianto.ytdn)](https://flathub.org/apps/io.github.arif_budianto.ytdn)
 [![Snapcraft](https://img.shields.io/snapcraft/v/ytdownloader/latest/stable)](https://snapcraft.io/ytdownloader)
 ![Chocolatey Version](https://img.shields.io/chocolatey/v/ytdownloader)
-![WinGet Package Version](https://img.shields.io/winget/v/aandrew-me.ytDownloader)
+![WinGet Package Version](https://img.shields.io/winget/v/arif-budianto.ytDownloader)
 
 A modern GUI video and audio downloader supporting [hundreds of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
 
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/ytdownloader)
-[![Get AppImage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)](https://github.com/aandrew-me/ytDownloader/releases/latest/download/YTDownloader_Linux.AppImage)
-<a href="https://flathub.org/apps/io.github.aandrew_me.ytdn"><img src="https://flathub.org/api/badge?svg&locale=en" style="width:180px;"></a>
-<a href="https://github.com/aandrew-me/ytDownloader/releases/latest/download/YTDownloader_Win.exe
+[![Get AppImage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)](https://github.com/arif-budianto/ytDownloader/releases/latest/download/YTDownloader_Linux.AppImage)
+<a href="https://flathub.org/apps/io.github.arif_budianto.ytdn"><img src="https://flathub.org/api/badge?svg&locale=en" style="width:180px;"></a>
+<a href="https://github.com/arif-budianto/ytDownloader/releases/latest/download/YTDownloader_Win.exe
 "><img src="https://user-images.githubusercontent.com/66430340/187172806-a8edd12a-ef58-4a05-96a3-99d7490b42f6.png" style="width:190px;"></a>
-<a href="https://github.com/aandrew-me/ytDownloader/releases/latest/download/YTDownloader_Mac_arm64.dmg"><img src="https://cdn.jsdelivr.net/gh/aandrew-me/badges/download_mac_apple_silicon.png" style="width:200px;"></a>
-<a href="https://github.com/aandrew-me/ytDownloader/releases/latest/download/YTDownloader_Mac_x64.dmg"><img src="https://cdn.jsdelivr.net/gh/aandrew-me/badges/download_mac_intel.png" style="width:200px;"></a>
+[Download macOS arm64](https://github.com/arif-budianto/ytDownloader/releases/latest/download/YTDownloader_Mac_arm64.dmg)
+[Download macOS x64](https://github.com/arif-budianto/ytDownloader/releases/latest/download/YTDownloader_Mac_x64.dmg)
 <a href="https://community.chocolatey.org/packages/ytdownloader"><img style="width:200px;" src="https://github-production-user-asset-6210df.s3.amazonaws.com/66430340/238886537-7b2769fe-bd62-4921-a0eb-edf2eb06216d.png" alt="Chocolatey"></a>
 
 ## Features 🚀
@@ -47,8 +47,8 @@ A modern GUI video and audio downloader supporting [hundreds of sites](https://g
 <!-- ![light](https://user-images.githubusercontent.com/66430340/196022796-1215038d-bafb-4450-82b1-7baddd60c0e8.png) -->
 
 
-<!-- ![ytdownloader_dark](https://github.com/aandrew-me/ytDownloader/assets/66430340/62efbca0-28b8-4016-bcf2-1a14bcaa782c) -->
-<!-- ![ytdownloader_light](https://github.com/aandrew-me/ytDownloader/assets/66430340/34f5270f-bdea-460e-8622-6459cd147b73) -->
+<!-- ![ytdownloader_dark](https://github.com/arif-budianto/ytDownloader/assets/66430340/62efbca0-28b8-4016-bcf2-1a14bcaa782c) -->
+<!-- ![ytdownloader_light](https://github.com/arif-budianto/ytDownloader/assets/66430340/34f5270f-bdea-460e-8622-6459cd147b73) -->
 
 ![ss_homepage](https://github.com/user-attachments/assets/12410bca-31c3-48a0-bbd3-1d74bcc752b6)
 ![ss_settings](https://github.com/user-attachments/assets/060557bc-d209-4bd0-bda4-debe42ca83a0)
@@ -56,8 +56,8 @@ A modern GUI video and audio downloader supporting [hundreds of sites](https://g
 
 
 
-<!-- ![ytdownloader_dark](https://github.com/aandrew-me/ytDownloader/assets/66430340/2f6695e7-6ca0-4f7c-91a0-0ad735c1e3af) -->
-<!-- ![ytdownloader_light](https://github.com/aandrew-me/ytDownloader/assets/66430340/3c974ab0-8257-4b8a-88ec-ee6bd119751e) -->
+<!-- ![ytdownloader_dark](https://github.com/arif-budianto/ytDownloader/assets/66430340/2f6695e7-6ca0-4f7c-91a0-0ad735c1e3af) -->
+<!-- ![ytdownloader_light](https://github.com/arif-budianto/ytDownloader/assets/66430340/3c974ab0-8257-4b8a-88ec-ee6bd119751e) -->
 
 # Installation
 
@@ -75,13 +75,13 @@ A modern GUI video and audio downloader supporting [hundreds of sites](https://g
 -   **Scoop**
     App can be installed with [Scoop](https://scoop.sh) using the following command
     ```
-    scoop install https://raw.githubusercontent.com/aandrew-me/ytDownloader/main/ytdownloader.json
+    scoop install https://raw.githubusercontent.com/arif-budianto/ytDownloader/main/ytdownloader.json
     ```
 -   **Winget**
 
     App can be installed with [Winget](https://github.com/microsoft/winget-cli) using the following command
     ```
-    winget install aandrew-me.ytDownloader
+    winget install arif-budianto.ytDownloader
     ```
 ## Linux 🐧
 
@@ -97,7 +97,7 @@ Flatpak is recommended. For arm processors, download from flathub.
 
 -   ### Flatpak
     ```
-    flatpak install flathub io.github.aandrew_me.ytdn
+    flatpak install flathub io.github.arif_budianto.ytdn
     ```
 -   ### Snapcraft
     ```
@@ -168,7 +168,7 @@ Thanks to [nxjosephofficial](https://github.com/nxjosephofficial), [LINUX-SAUNA]
 Required commands to get started.
 
 ```
-git clone https://github.com/aandrew-me/ytDownloader.git
+git clone https://github.com/arif-budianto/ytDownloader.git
 cd ytDownloader
 npm i
 ```

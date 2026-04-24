@@ -19,12 +19,12 @@
 		"gh-mac": "electron-builder -m --publish=always"
 	},
 	"author": {
-		"name": "Andrew",
-		"email": "aandrew.me@pm.me"
+		"name": "Arif Budianto",
+		"email": "arif-budianto@users.noreply.github.com"
 	},
 	"publish": {
 		"provider": "github",
-		"owner": "aandrew-me",
+		"owner": "arif-budianto",
 		"repo": "ytDownloader",
 		"private": false
 	},
@@ -37,7 +37,7 @@
 	},
 	"build": {
 		"productName": "YTDownloader",
-		"appId": "io.github.aandrew_me.ytdn",
+		"appId": "io.github.arif_budianto.ytdn",
 		"artifactName": "${productName}.${ext}",
 		"files": [
 			"./resources/**/*",

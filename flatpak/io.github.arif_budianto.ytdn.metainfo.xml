@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>io.github.aandrew_me.ytdn</id>
+  <id>io.github.arif_budianto.ytdn</id>
   <name>ytDownloader</name>
-  <launchable type="desktop-id">io.github.aandrew_me.ytdn.desktop</launchable>
-  <developer id="io.github.aandrew_me">
-    <name>Andrew</name>
+  <launchable type="desktop-id">io.github.arif_budianto.ytdn.desktop</launchable>
+  <developer id="io.github.arif_budianto">
+    <name>Arif Budianto</name>
   </developer>
-  <url type="bugtracker">https://github.com/aandrew-me/ytDownloader/issues</url>
+  <url type="bugtracker">https://github.com/arif-budianto/ytDownloader/issues</url>
   <url type="translate">
-    https://github.com/aandrew-me/ytDownloader?tab=readme-ov-file#internationalization-localization-</url>
+    https://github.com/arif-budianto/ytDownloader?tab=readme-ov-file#internationalization-localization-</url>
   <summary>Download videos and audios from hundreds of sites</summary>
   <description>
     <p>ytDownloader (Formerly know as Youtube Downloader Plus) lets you download videos and audios
@@ -50,7 +50,7 @@
     </screenshot>
 
   </screenshots>
-  <url type="homepage">https://github.com/aandrew-me/ytDownloader</url>
+  <url type="homepage">https://github.com/arif-budianto/ytDownloader</url>
 
   <content_rating type="oars-1.1" />
 
