@@ -179,7 +179,7 @@ To run with [Electron](https://www.electronjs.org/) :
 npm start
 ```
 
-You need to download ffmpeg and put it in the root directory of the project. If you don't need to build for arm processor, you can download ffmpeg by executing any of the files - linux.sh / mac.sh / windows.sh depending on the platform. Otherwise you need to download ffmpeg from [here](https://github.com/yt-dlp/FFmpeg-Builds/releases) for windows/linux and from [here](http://www.osxexperts.net/) for mac (not tested)
+You need to download ffmpeg and put it in the root directory of the project. If you do not want to prepare it manually, run `linux.sh`, `mac.sh`, or `windows.ps1` depending on the platform. These scripts download Node.js from the official Node.js distribution, FFmpeg builds for Linux and Windows from [BtbN FFmpeg Builds](https://github.com/BtbN/FFmpeg-Builds/releases), and macOS binaries from [Evermeet](https://evermeet.cx/ffmpeg/).
 
 To build for Linux (It will create packages as specified in package.json). The builds are stored in **release** folder.
 ```
