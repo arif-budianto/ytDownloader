@@ -11,3 +11,6 @@ ffmpeg.patch
 deno*
 node.exe
 node
+!/.github
+!/.github/workflows
+!/.github/workflows/**

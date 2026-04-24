@@ -1,0 +1,70 @@
+name: Release macOS + Homebrew
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release-macos:
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Prepare ffmpeg for macOS bundle
+        run: bash mac.sh
+
+      - name: Build macOS app
+        run: pnpm mac
+
+      - name: Compute checksum
+        id: checksum
+        run: |
+          echo "version=$(node -e \"process.stdout.write(require('./package.json').version)\")" >> "$GITHUB_OUTPUT"
+          echo "sha256=$(shasum -a 256 release/YTDownloader_Mac_arm64.dmg | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Generate Homebrew cask
+        run: ./scripts/generate-homebrew-cask.sh "${{ steps.checksum.outputs.version }}" "${{ steps.checksum.outputs.sha256 }}"
+
+      - name: Commit updated cask
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Casks/ytdownloader.rb
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update Homebrew cask for v${{ steps.checksum.outputs.version }}"
+          git push origin HEAD:main
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release/YTDownloader_Mac_arm64.dmg
+            release/YTDownloader_Mac_arm64.dmg.blockmap
+            release/YTDownloader_Mac_arm64.zip
+            release/YTDownloader_Mac_arm64.zip.blockmap
+            release/latest-mac.yml
+            Casks/ytdownloader.rb
+          generate_release_notes: true
