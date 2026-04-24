@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Casks/ytdownloader.rb
+          git add Casks/yt-downloader.rb
           git diff --cached --quiet && exit 0
           git commit -m "chore: update Homebrew cask for v${{ steps.checksum.outputs.version }}"
           git push origin HEAD:main
@@ -66,5 +66,5 @@ jobs:
             release/YTDownloader_Mac_arm64.zip
             release/YTDownloader_Mac_arm64.zip.blockmap
             release/latest-mac.yml
-            Casks/ytdownloader.rb
+            Casks/yt-downloader.rb
           generate_release_notes: true

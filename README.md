@@ -112,14 +112,20 @@ You can install the macOS app from this repository tap:
 
 ```
 brew tap arif-budianto/ytDownloader https://github.com/arif-budianto/ytDownloader
-brew install --cask arif-budianto/ytDownloader/ytdownloader
+brew install --cask arif-budianto/ytDownloader/yt-downloader
+```
+
+After the tap is added once, next installs can use the shorter command:
+
+```
+brew install --cask yt-downloader
 ```
 
 To update later:
 
 ```
 brew update
-brew upgrade --cask arif-budianto/ytDownloader/ytdownloader
+brew upgrade --cask arif-budianto/ytDownloader/yt-downloader
 ```
 
 Since the app is not signed, when you will try to open the app, macOS will not allow you to open it. 

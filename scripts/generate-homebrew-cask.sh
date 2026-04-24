@@ -10,8 +10,8 @@ if [ -z "$VERSION" ] || [ -z "$SHA256" ]; then
     exit 1
 fi
 
-cat > Casks/ytdownloader.rb <<CASK
-cask "ytdownloader" do
+cat > Casks/yt-downloader.rb <<CASK
+cask "yt-downloader" do
   version "$VERSION"
   sha256 "$SHA256"
 

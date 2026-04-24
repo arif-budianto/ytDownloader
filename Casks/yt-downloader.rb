@@ -1,6 +1,6 @@
-cask "ytdownloader" do
-  version "3.20.2"
-  sha256 "4c464fda00e85d24d7f8e41a849940358d4d5d1eb501f3eff98a5c1161c266d9"
+cask "yt-downloader" do
+  version "3.20.3"
+  sha256 "e9b210fca23dfe401d09cf7d385d32a17b67a877d8f4187d1ed65837c13a0a05"
 
   url "https://github.com/arif-budianto/ytDownloader/releases/download/v#{version}/YTDownloader_Mac_arm64.dmg",
       verified: "github.com/arif-budianto/ytDownloader/"
