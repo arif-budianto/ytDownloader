@@ -1211,6 +1211,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+
 #homeWatermark {
 	position: fixed;
 	inset: 0;
@@ -1230,9 +1235,30 @@ input[type="range"]::-webkit-slider-thumb:hover {
 	filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.28));
 }
 
-body > *:not(#homeWatermark) {
+#menuIcon,
+#menu,
+#pasteUrl,
+#popupBox,
+#popupBoxMac,
+#loadingWrapper,
+#hidden,
+#list,
+#clearBtn,
+#goToTop,
+#incorrectMsg,
+#errorBtn,
+#errorDetails,
+#updatePopup,
+#popupContainer {
 	position: relative;
 	z-index: 1;
+}
+
+#menuIcon,
+#menu,
+#popupBox,
+#popupBoxMac {
+	position: absolute;
 }
 
 :root[theme="light"] #homeWatermark img,
